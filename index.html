@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchanger</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="exchanger">
+      <h1 class="exchanger__title">Currency exchange</h1>
+      <div class="exchanger__wrapper">
+        <form action="" class="exchanger__form">
+          <div class="exchanger__form-group">
+            <label for="amount" class="exchanger__form-label">Amount</label>
+            <input
+              id="amount"
+              type="number"
+              name="amount"
+              autocomplete="off"
+              placeholder="Enter amount"
+              data-error-message="Amount must be over 0"
+              step="0.01"
+              class="exchanger__form-input exchanger__form-input--amount"
+            />
+            <span class="exchanger__form-error"></span>
+          </div>
+          <div class="exchanger__form-group">
+            <label for="from" class="exchanger__form-label">From</label>
+            <input
+              id="from"
+              autocomplete="off"
+              type="text"
+              name="from"
+              placeholder="Choose currency"
+              data-error-message="Choose correct currency"
+              class="exchanger__form-input exchanger__form-input--currency"
+            />
+            <span class="exchanger__form-error"></span>
+            <ul class="exchanger__form-currencies"></ul>
+          </div>
+          <div class="exchanger__form-reverse"></div>
+          <div class="exchanger__form-group">
+            <label for="to" class="exchanger__form-label">To</label>
+            <input
+              id="to"
+              autocomplete="off"
+              type="text"
+              name="to"
+              placeholder="Choose currency"
+              data-error-message="Choose correct currency"
+              class="exchanger__form-input exchanger__form-input--currency"
+            />
+            <span class="exchanger__form-error"></span>
+            <ul class="exchanger__form-currencies"></ul>
+          </div>
+          <button class="exchanger__form-btn">Convert</button>
+        </form>
+        <div class="exchanger__result"></div>
+      </div>
+    </div>
+    <script type="module" src="./js/events.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
