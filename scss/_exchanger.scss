@@ -91,6 +91,7 @@
       background: url(../icons/arrows.svg) center center no-repeat;
     }
     &-btn {
+      color: #000;
       height: 56px;
       width: 180px;
       background: rgb(120, 242, 104);
@@ -180,18 +181,21 @@
       margin-bottom: 12px;
     }
     label {
-      font-size: 14px;
+      font-size: 15px;
     }
     &__form {
       &-group {
-        font-size: 14px;
+        font-size: 15px;
       }
       &-btn {
         width: 100%;
       }
+      &-error {
+        bottom: -20px;
+      }
     }
     &__result {
-      font-size: 14px;
+      font-size: 15px;
       &-info {
         white-space: pre-wrap;
         transform: translateX(-8px);

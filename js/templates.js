@@ -32,7 +32,7 @@ function createResultTemplate() {
     </p>
     <div class="exchanger__result-inner">
       <p class="exchanger__result-rate">
-        1.00 ${baseCode} = ${conversionRate.toFixed(2)} ${targetCode}
+        1.00 ${baseCode} = ${conversionRate.toFixed(3)} ${targetCode}
       </p>
       <p class="exchanger__result-date">
         Last updated: ${convertDateFormat(lastUpdate)}
