@@ -24,7 +24,7 @@ function createResultTemplate() {
   } = state;
   return `
     <p class="exchanger__result-info">
-     ${amount} ${baseCode} 
+     ${Number(amount).toLocaleString("en-US")} ${baseCode} 
       <span>${getCurrencyName(baseCode)}</span> 
   =
    ${conversionResult.toFixed(2)} ${targetCode} 
