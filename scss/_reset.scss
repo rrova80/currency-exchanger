@@ -67,6 +67,8 @@ input[type="number"] {
 }
 input,
 textarea {
+  border-radius: 0;
+  border: none;
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
